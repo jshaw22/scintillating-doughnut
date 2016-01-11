@@ -22,17 +22,11 @@ Read the PRESS-RELEASE.MD. It'll rock your world. But in summary,
 
 ## Usage
 
-<<<<<<< HEAD
+
 - npm install at root directory to install dependencies
 - mongod to spin up database
 - npm start to start server. This is esentially `node server/server.js` from root
 - If you need a refresher or need to reference the Avalon game, see Avalon Game Rules and Basics section 
-=======
-> npm install at root directory to install dependencies
-> mongod to spin up database
-> npm start to start server. This is esentially `node server/server.js` from root
-> If you need a refresher or need to reference the 
->>>>>>> 9f996465362fcd6a85c25a4f0d5e3b99f45b7163
 
 ## Requirements
 
