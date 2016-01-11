@@ -55,7 +55,11 @@ Minion        Sinister Sausage
 
 Good:
 
+<<<<<<< HEAD
 Merlin        Scintillating Doughnut
+=======
+Merlin        Scintillating Donut
+>>>>>>> 9f996465362fcd6a85c25a4f0d5e3b99f45b7163
 Percival      Perceiving Pancakes
 Servant       Cereal
 Servant       Cinnamon Roll
