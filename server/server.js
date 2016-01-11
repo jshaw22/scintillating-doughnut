@@ -7,6 +7,7 @@ var gameController = require('./db/gameController.js');
 var gameLogic = require('./config/gameLogic.js');
 
 var port = process.env.PORT || 3000;
+mongoose.connect('mongodb://localhost/breakfastgame');
 
 //array of current players, will get populated as players
 //join the game
@@ -140,6 +141,13 @@ io.on('connection', function (client) {
       questMembers.push(names[i]);
     }
 
+  client.on('assassinCheck', function (name) {
+
+    var result = gameLogic.isAssassinSuccessful(currentGame, name);
+
+    io.emit('assassinResult', result);
+  });
+
     /////////////////////////////////////////////////
     //// WHY NOT JUST SET questMembers to names /////
     /////////////////////////////////////////////////
@@ -161,7 +169,8 @@ io.on('connection', function (client) {
 
 });
 
-// app.get('/api/stats', gameController.allStats);
+/// Get and Post REST for gamestats front-end rendering. Independent of sockets. 
+ app.get('/api/stats', gameController.allStats);
 
-// app.post('api/stats', gameController.addGameStats);
+ app.post('api/stats', gameController.storeFinishedGameStats);
 
