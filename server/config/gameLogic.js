@@ -13,7 +13,7 @@ var GameState = function (players) {
   this.numberOfPlayers = players.length;
   this.availableRoles = randomRoles(this.numberOfPlayers);
   this.questSet = {1 : null, 2 : null, 3 : null, 4 : null, 5 : null};
-  this.gameTime = timeInSeconds;
+  this.gameTime = timeInSeconds; // Why doesnt this work? 
 
   for (var i = 0; i < this.numberOfPlayers; i++) {
     this.players.push(new CreatePlayer(this.allPlayersNames[i],this.availableRoles[i], this));
