@@ -27,8 +27,6 @@ Read the PRESS-RELEASE.MD. It'll rock your world. But in summary,
 - npm start to start server. This is esentially `node server/server.js` from root
 - If you need a refresher or need to reference the Avalon game, see Avalon Game Rules and Basics section 
 
-
-
 ## Requirements
 
 - All requirements and dependencies can be installed via 'npm install'
@@ -55,13 +53,13 @@ npm install
 
 | Avalon Name | Breakfast Game Name    |
 |-------------|------------------------|
-| Bad         |                        |
+| **Bad**     |                        |
 | Assasin     | Egg-sassin             |
 | Morgana     | Plain Bagel            |
 | Mordred     | Chocolate Bacon        |
 | Minion      | Sinister Sausage       |
 |             |                        |
-| Good        |                        |
+| **Good**    |                        |
 | Merlin      | Scintillating Doughnut |
 | Percival    | Perceiving Pancakes    |
 | Servant     | Cereal                 |
@@ -71,6 +69,6 @@ npm install
 
 Also see the flowchart for gameflow. 
 
-## Contributing
+### Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
