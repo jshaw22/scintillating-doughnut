@@ -1,0 +1,9 @@
+<div class="statsView" style="clear:both;">
+  <h1>Game Statistics</h1>
+
+  <div ng-repeat='stat in stats'>
+  	<p>Did the sweets win?: {{stat.winner}}</p>
+  	<p>Number of players for this game: {{stat.numPlayers}}</p>
+  	<p>The game took {{stat.gameTime}} seconds.</p>
+  	<p>The game got to {{stat.questNumber}} rounds before it ended. </p>
+</div>

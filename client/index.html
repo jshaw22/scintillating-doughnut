@@ -19,10 +19,10 @@
     <!-- <div ng-include='"views/EnterPlayerView.html"'></div> -->
 
     <div class="EnterPlayer">
-      <form ng-submit="enterPlayerName()" style="float:left" ng-show="!playerJoined">
+      <form ng-submit="enterPlayerName(); playerReadied=true;" style="float:left" ng-show="!playerJoined">
         <input type="text" ng-model="nameInput" placeholder="Enter Player Name">
       </form>
-      <button ng-click="ready()" style="float:left;" ng-show="!playerReadied && playerJoined">Ready</button>
+      <button ng-click="ready();" style="float:left;" ng-show="playerReadied">Ready</button>
       You are: {{playerName}}
     </div>
     
@@ -30,8 +30,10 @@
     <button ng-click="toggleRole()" ng-if= 'showRoleToggle' style="float:left;clear:both;">Show/Hide Role</button>
     <div style='float:left;clear: both; border:2px solid black; margin-top:10px' ng-if='showRoster' class='specialpowers'>
     <p>Your character is: <span style='font-weight:bold;'>{{thisPlayer.role}}</span></p>
+    <img src='{{thisPlayer.image}}'>
     <p>You are on the <span style='font-weight:bold;'>{{thisPlayer.team}}</span> side. 
     <p>You can see:</p>
+
     <div ng-repeat='see in thisPlayer.specialAbility'>
       <li>{{see}}</li>
     </div>
@@ -41,6 +43,8 @@
     <div ng-include='"views/gameBoardView.html"'></div>
 
     <div ng-include='"views/userInputView.html"'></div>
+
+    <div ng-include='"views/statsView.html"'></div>
 
     <!-- <div ng-include='"views/rosterView.html"' ng-if="showRoster"></div> -->
     <div class="rosterView" style="clear:both; border:2px solid black; margin-top:10px;" ng-if="showRoster">

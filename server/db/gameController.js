@@ -17,12 +17,10 @@ module.exports = {
 
 	storeFinishedGameStats: function (req, res, next) {
 		return addStats({
-			spyWin: req.body.spyWin,
-			spyLose: req.body.spyLose,
-			numPlayers: req.body.numPlayers,
+			sweetWon: req.body.winner,
+			numPlayers: req.body.numberOfPlayers,
 			gameTime: req.body.gameTime,
 			numRoundsPlayed: req.body.numRoundsPlayed
 		})
-
 	}
 }
