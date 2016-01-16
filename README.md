@@ -1,6 +1,6 @@
 # Scintillating-Doughnut
 
-Read the PRESS-RELEASE.MD. It'll rock your world. But in summary,
+Read the PRESS-RELEASE.MD. It'll rock your world. But in summary, we built this app because role delegation, voting, and clean-up/vote resets took up way too much unecessary time over lunch/dinner when time is too precious. 
 > The Savory breakfast food have gotten sick and tired of taking a backseat to the sugary and sweet breakfast delights. They're disguising themselves as sweet, but are actually super salty underneath. Now it's up to the Mighty Scintillating Doughnut to prevent a breakfast table takeover.
 
 ## Team
@@ -34,6 +34,7 @@ Read the PRESS-RELEASE.MD. It'll rock your world. But in summary,
 - Database: MongoDB
 - Backend: Node/Express
 - Front-End: AngularJS / Ionic for mobile
+- Sockets with Socket.io
 
 ## Development
 See [List of Features and their statuses](https://docs.google.com/spreadsheets/d/1hZFleg0Ch8ozMoGU2jeJO_pa8wD1_rQmuTdSgTEbGGM/edit#gid=0)
