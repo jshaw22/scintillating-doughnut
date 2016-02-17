@@ -20,6 +20,9 @@ Read the PRESS-RELEASE.MD. It'll rock your world. But in summary, we built this 
 1. [Avalon/Breakfast Game Rules and Basics]
 1. [Contributing](#contributing)
 
+
+## Application Screenshot 
+![Pic](http://i.imgur.com/S3MweHw.jpg?1)
 ## Usage
 
 
