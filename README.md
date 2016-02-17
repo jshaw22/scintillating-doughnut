@@ -22,7 +22,7 @@ Read the PRESS-RELEASE.MD. It'll rock your world. But in summary, we built this 
 
 
 ## Application Screenshot 
-![Pic](http://i.imgur.com/S3MweHw.jpg?1)
+![Pic](http://i.imgur.com/2fTyvcJ.jpg?1)
 ## Usage
 
 
